@@ -85,10 +85,10 @@
                       <br><!--create space betweeen the question and answer section-->
                       <div class="border w-50 mx-auto"><!--div to put my answer box -->
                         <div class="p-2 bg-light">
-                          <div class="mx-auto p-4"><label>Answer:  <input id="" type="number"><!--input and answer wrapped in a lablem to respond-->
-                             <br><!--move your button to the next line-->
-                              <button class="border mx-auto bg-secondary" onclick="fibonacci()">Check Answer</button></label>
-                              <h4 class="mx-auto" id="message">  </h4>
+                          <div class="mx-auto p-4"><label>Answer:  </label>
+                            <input id="problem2" type="number"><!--input and answer wrapped in a lablem to respond-->
+                              <button class="border mx-auto bg-secondary" onclick="fibonacci()">Check Answer</button>
+                              <h4 class="mx-auto" id="mess2">  </h4>
                             </div>
                           </div>
                       </div>
@@ -110,6 +110,7 @@
                     <div class="p-2 bg-light">
                       <div class="mx-auto p-4"><label>Answer:  <input id="problem3" type="text"><!--input and answer wrapped in a lablem to respond-->
                          <button class="border bg-secondary" onclick="primeFactor()">Check Answer</button></label>
+                         <h4 id="message3"> </h4>
                         </div>
                       </div>
                   </div>
@@ -123,13 +124,12 @@
            
         </div>
     </div>
-      <div class="footer justify-content-between">
-        <ul class="#">
-          <li>Project Euler: </li>
-          <li><a href="#">Copyright Information</a></li>
-          <li>| Privacy Policy</li>
-        </ul>
-        </div>
+      <footer class="d-flex justify-content-center no-print">
+          Project Euler: 
+          <a class="mr-sm-2" href="copyright"> Copyright Information</a>
+          "|"
+          <a class="mr-lg-2" href="privacy">Privacy Policy</a>
+      </footer>
    </div>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -18,19 +18,40 @@ function multiples() {
 
 
 //initialization
-const input2 = document.querySelector(#problem2);
-const output2 = document.querySelector(#message);
+const input2 = document.querySelector("#problem2");
+const output2 = document.querySelector("#mess2");
 
 //function to solve the second solution
 function fibonacci() {
 
-    alert("Testing");//text if javascript and html button 1 is linked together
+    //alert("Testing");//text if javascript and html button 1 is linked together
+    //declare ypour two varables that will be used to calculate
+    let totSum = 0;
+    let valu1 = 1;
+    let valu2 = 2;
+
+    while (valu2 <= input2.value) // while your value is not  equal to the iput variable
+     {
+       if(valu2 % 2 === 0)
+         {
+            totSum += valu1;
+         }
+         //introduce a temp variable because you are going to swup
+         let temporary = 0;
+
+        /// swup
+        temporary = valu2;
+        valu2 += valu1;
+        valu1 = temp; 
+     }
+
+     output2.innerHTML = "The sum of the even-valued terms of " + input2.value + " is: " + totSum;
 }
 
 
 //initialization for the third problem
-const input3 = document.querySelector(#problem3);
-const input4 = document.querySelector(#message);
+const input3 = document.querySelector("#problem3");
+const output3 = document.querySelector("#message3");
 //function to solve the third solution
 function primeFactor() {
    
