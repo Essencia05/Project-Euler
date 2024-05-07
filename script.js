@@ -13,7 +13,7 @@ function multiples() {
          }
         
     }
-     output1.innerHTML = "The sum of " + input1.value + " = " + sumP1; //displaying of my sum and output
+     output1.innerHTML = "The sum of 3 or 5 less than " + input1.value + " is " + sumP1; //displaying of my sum and output
 }
 
 
@@ -21,32 +21,26 @@ function multiples() {
 const input2 = document.querySelector("#problem2");
 const output2 = document.querySelector("#mess2");
 
-//function to solve the second solution
 function fibonacci() {
-
-    //alert("Testing");//text if javascript and html button 1 is linked together
-    //declare ypour two varables that will be used to calculate
     let totSum = 0;
     let valu1 = 1;
     let valu2 = 2;
 
-    while (valu2 <= input2.value) // while your value is not  equal to the iput variable
-     {
-       if(valu2 % 2 === 0)
-         {
-            totSum += valu1;
-         }
-         //introduce a temp variable because you are going to swup
-         let temporary = 0;
+    const maxVal = parseInt(input2.value); // Convert input value to a number
 
-        /// swup
-        temporary = valu2;
+    while (valu2 <= maxVal) {
+        if (valu2 % 2 === 0) {
+            totSum += valu2; // Add the even-valued term
+        }
+
+        let temp = valu2; // Use temp to swap values
         valu2 += valu1;
-        valu1 = temp; 
-     }
+        valu1 = temp;
+    }
 
-     output2.innerHTML = "The sum of the even-valued terms of " + input2.value + " is: " + totSum;
+    output2.innerHTML = "The sum of the even-valued terms of " + input2.value + " is: " + totSum;
 }
+
 
 
 //initialization for the third problem
